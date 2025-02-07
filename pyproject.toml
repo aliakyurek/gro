@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gro"
+version = "0.1.0"
+description = "A Python library for utilizing Gradio in more OOP friendly manner."
+readme = "README.md"
+requires-python = ">=3.6"
+license = {text = "MIT License"}
+authors = [
+    {name = "Ali Akyurek", email = "aliakyurek@gmail.com"}
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+dependencies = [
+    "gradio>=5.0.0"
+]
+
+[project.urls]
+Homepage = "https://github.com/aliakyurek/gro"
