@@ -111,7 +111,7 @@ if __name__ == "__main__":
 ```
 
 ## Demo
-
+![Demo Animation](static/animation.gif)
 
 ## License
 
