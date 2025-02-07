@@ -2,7 +2,7 @@
 
 The `gro` library is a wrapper around the excellent Gradio library that simplifies the creation of any persistent single-user UI application. It provides a way to separate the UI from the logic, making it easier to maintain and test the application.  
 
-It provides a `Block` class for to contain the UI elements with `gro` wrapped Gradio objects, and defining their layout. The logic itself can be defined in a separate model class, and UI to event listener mappings can be defined in a separate app class.
+It provides a `Block` class for to contain the UI elements with `gro` wrapped Gradio components, and defining their layout. The logic itself can be defined in a separate model class, and UI to event listener mappings can be defined in a separate app class.
 
 ## Quick Start
 ### Installation
@@ -18,7 +18,7 @@ Define the set of UI elements in a UI class inheriting from gro.Block.
 * Use any Gradio component with its parameters as usual with the `gro.Wrapper`.
   * See `grow(gr.Textbox, show_label=False, placeholder="E.g. Buy groceries")`.
 * Build the layout by implementing `layout()` method in the UI class.
-  * You can use both grow and Gradio components in the layout.
+  * You can use both `gro` wrapped and pure Gradio components in the layout.
   * See `layout()` method.
 
 ```python
