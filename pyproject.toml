@@ -21,5 +21,8 @@ dependencies = [
     "gradio>=5.0.0"
 ]
 
+[tool.setuptools]
+packages = ["gro"]
+
 [project.urls]
 Homepage = "https://github.com/aliakyurek/gro"
