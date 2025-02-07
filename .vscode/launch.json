@@ -2,16 +2,18 @@
     // Use IntelliSense to learn about possible attributes.
     // Hover to view descriptions of existing attributes.
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    // vscode uses same launch.json configuration for both debug and start without debugging.
+    // when you start without debugging, it will not stop on breakpoints by default. 
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Run application",
-            "type": "python",
+            "name": "Debug application",
+            "type": "debugpy",
             "request": "launch",
             "program": "examples\\todo.py",
-            "console": "integratedTerminal",
-            "justMyCode": true,
-            "consoleTitle": "Run"
+            "console": "internalConsole",
+            "justMyCode": false,
+            "stopOnEntry": true
         }
     ]
 }

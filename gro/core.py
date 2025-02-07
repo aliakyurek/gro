@@ -40,9 +40,8 @@ class Block:
         """
         Loads data from the data source for all gradio objects with a data source function assigned.
         
-        This method is called when the Gradio interface is loaded or reloaded.
+        This method is called when the UI loaded or refreshed in the browser. (not on form actions e.g. button click)
         """
-        print("Reloading")
         outputs = [o._source() for o in self.dyn_reloading_instances]
         return outputs if len(outputs) > 1 else outputs[0]
 

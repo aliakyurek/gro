@@ -2,11 +2,6 @@ from gro import Wrapper as grow
 from gro import Block
 import gradio as gr
 
-import os
-
-print(f"Current working directory: {os.getcwd()}")
-print(f"os.syspath : {os.sys.path}")
-
 class HelloBlock(Block):
     """
     A custom block that defines the UI layout for the todo application.
